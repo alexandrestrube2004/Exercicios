@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class ordenadornumeroscrescente
+{
+  public static void main()
+  {
+        Scanner ler= new Scanner(System.in);
+        int a, b, c;
+        System.out.printf ("\n Digite o primeiro valor:");
+        a= ler.nextInt();
+        
+        System.out.printf ("\n Digite o segundo valor:");
+        b= ler.nextInt();
+        
+        System.out.printf ("\n Digite o terceiro valor:");
+        c= ler.nextInt();
+        
+        if (a>b && a>c){
+        System.out.printf ("\n %d", a);
+        if (c>b){
+        System.out.printf ("\n %d", c);
+        System.out.printf ("\n %d", b);
+       }
+        else{
+        System.out.printf ("\n %d", b);
+        System.out.printf ("\n %d", c);
+       }
+    }
+   
+      if (b>a && b>c){
+      System.out.printf ("\n %d", b);
+        if (c>a){
+        System.out.printf ("\n %d", c);
+        System.out.printf ("\n %d", a);
+       }
+        else{
+        System.out.printf ("\n %d", a);
+        System.out.printf ("\n %d", c);
+      }
+    }
+    
+       if (c>a && c>b){
+       System.out.printf ("\n %d", c);
+        if (b>a){
+        System.out.printf ("\n %d", b);
+        System.out.printf ("\n %d", a);
+       }
+        else{
+        System.out.printf ("\n %d", a);
+        System.out.printf ("\n %d", b);
+       }
+    }
+   
+ }
+}
