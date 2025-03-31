@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class FactorialJava
+{
+    public static void main()
+    {
+        Scanner ler= new Scanner (System.in);
+        long v, nv, n;
+        
+        System.out.printf ("\n Type a number and the factorial will be calculated !!!");
+        System.out.printf ("\n Number: ");
+        n= ler.nextInt ();
+        
+        v=n;
+        
+       
+        while (n>1)
+        {
+           n=n-1;
+           nv=(v*n);
+           v=nv;
+        }
+        System.out.printf ("The result is %d", v);    
+    }
+}
