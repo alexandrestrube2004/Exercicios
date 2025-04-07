@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class notas_aluno{
+    public static void main (String [] args){
+        Scanner ler = new Scanner (System.in);
+        double p, m, f, q, b, g;
+        
+        System.out.printf ("\n Digite o nome do aluno:");
+        String nome = ler.nextLine();
+        
+        System.out.printf ("\n Digite a nota em português:");
+        p= ler.nextDouble();
+        System.out.printf ("\n Digite a nota em matemática:");
+        m= ler.nextDouble();
+        System.out.printf ("\n Digite a nota em física:");
+        f= ler.nextDouble();
+        System.out.printf ("\n Digite a nota em química:");
+        q= ler.nextDouble();
+        System.out.printf ("\n Digite a nota em biologia:");
+        b= ler.nextDouble();
+        System.out.printf ("\n Digite a nota em geografia:");
+        g= ler.nextDouble();
+
+        double menorn= Math.min(p,Math.min(m,Math.min(f,Math.min(q,Math.min(b,g)))));
+        double maiorn= Math.max(p,Math.max(m,Math.max(f,Math.max(q,Math.max(b,g)))));
+        
+        System.out.printf ("\n A menor nota do aluno é: %s", menorn);
+        System.out.printf ("\n A maior nota do aluno é: %s", maiorn);
+}
+}
