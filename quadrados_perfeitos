@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class quadrados_perfeitos{
+    public static void main (String [] args){
+        Scanner ler = new Scanner (System.in);
+        double n, nn;
+        System.out.printf ("Digite o numero de quadrados perfeitos solicitados:");
+        n= ler.nextInt();
+        
+        for (int i=1; i<=n; i++){
+            nn= Math.pow (i, 2);
+            System.out.printf ("\n %s", nn);
+    }
+}
+}
