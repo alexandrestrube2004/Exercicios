@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class veiculo{
+    public static void main (String [] args){
+        Scanner ler = new Scanner (System.in);
+        float d, t, c, cm, vm;
+        
+        System.out.printf ("Digite a distância percorrida (KM):");
+        d= ler.nextFloat();
+        System.out.printf ("Digite o tempo do trajeto (h):");
+        t= ler.nextFloat();
+        System.out.printf ("Digite o consumo de combustível (L):");
+        c= ler.nextFloat();
+        
+        cm= d/c;
+        vm= d/t;
+        
+        System.out.printf ("\n O consumo médio é de: %s KM/L", cm);
+        System.out.printf ("\n A velocidade média é de: %s KM/h", vm);
+
+}
+}
