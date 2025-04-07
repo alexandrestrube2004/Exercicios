@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class media_cinco{
+    public static void main (String [] args){
+        Scanner ler = new Scanner (System.in);
+        int a, b, c, d, e, m;
+        
+        System.out.printf ("\n Digite o primeiro valor:");
+        a= ler.nextInt();
+        System.out.printf ("\n Digite o segundo valor:");
+        b= ler.nextInt();
+        System.out.printf ("\n Digite o terceiro valor:");
+        c= ler.nextInt();
+        System.out.printf ("\n Digite o quarto valor:");
+        d= ler.nextInt();
+        System.out.printf ("\n Digite o quinto valor:");
+        e= ler.nextInt();
+
+        m= (a+b+c+d+e)/5;
+
+            System.out.printf ("\n %d", m);
+    }
+}
