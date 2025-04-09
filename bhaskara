@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class bhaskara{
+    public static void main (String [] args){
+        Scanner ler= new Scanner (System.in);
+        int a, b, c;
+        
+        System.out.printf ("\n Digite o valor de A");
+        a= ler.nextInt();
+        while(a==0){
+            System.out.printf ("\n Digite o valor de A");
+            a= ler.nextInt();
+        }
+        
+        System.out.printf ("\n Digite o valro de B:");
+        b= ler.nextInt();
+        
+        System.out.printf ("\n Digite o valro de C:");
+        c= ler.nextInt();
+       
+        double d = b*b-4*a*c;
+        double rd= Math.sqrt (d); 
+        double x1=(-b+rd)/2*a;
+        double x2=(-b-rd)/2*a;
+        if (d<0) System.out.printf ("\n As raízes não são reais.");
+        if (d==0) System.out.printf ("\n A raíz é igual a %s", x1);
+        if (d>0) System.out.printf ("\n As raízes são iguais a %s e %s", x1, x2);
+      }
+   }
