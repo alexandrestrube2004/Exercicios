@@ -2,11 +2,16 @@
 public class tabuada{
     public static void main (String [] args){
         Scanner ler= new Scanner (System.in);
-        int n;
+        int n, t;
+        
         do{
-        System.out.printf ("\n Digite um valro de 1 a 9:");
+        System.out.printf ("\n Digite um valor de 1 a 9:");
         n= ler.nextInt();
        }while (n>9 || n<1);
        
+       for(int i=1; i<=9; i++){
+       t=n*i;
+       System.out.printf ("\n %d x %d = %d", i, n, t);
+       }
     }
-}      
+} 
