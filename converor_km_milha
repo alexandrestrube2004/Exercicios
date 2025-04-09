@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class converor_km_milha{
+    public static void main (String [] args){
+        Scanner ler= new Scanner (System.in);
+        double km, milha;
+        
+        System.out.printf ("Digite o valor em Km para ser convertido em milhas:");
+        km= ler.nextDouble();
+        
+        milha= (km/1.6093);
+        
+        System.out.printf ("o valor em milhas é: %s", milha);
+    }
+}
