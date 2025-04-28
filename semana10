@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class analise{
+    public static void main(String [] args){
+     Scanner input= new Scanner(System.in);
+     System.out.printf ("Digite uma frase:");
+     String frase = input.nextLine();
+     int a = (frase.length());
+     System.out.printf ("\n Número de caracteres %d", a);
+     String[] palavras = frase.split(" ");
+     int b = palavras.length;
+     System.out.printf ("\n Número de palavras " + b);
+     
+    }
+}
