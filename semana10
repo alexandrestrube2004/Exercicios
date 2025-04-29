@@ -9,6 +9,15 @@ public class analise{
      String[] palavras = frase.split(" ");
      int b = palavras.length;
      System.out.printf ("\n Número de palavras " + b);
+     int c = 0;
+     for (char vogal : frase.toCharArray()) {
+         if ("aeiouàáéíóúãõ".indexOf(vogal) != -1) {
+              c++;
+            }
+         }
+     System.out.printf ("\n Número de vogais: " + c);
+     String polindromo = new StringBuilder(frase).reverse().toString();
+     System.out.println (frase.equals(reverse));
      
+     }
     }
-}
