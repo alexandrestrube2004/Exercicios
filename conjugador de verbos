@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class conjugacao{
+    public static void main(String[] args){
+        Scanner input= new Scanner(System.in);
+        String texto= "";
+        do{
+        System.out.println ("\n Digite um verbo terminado em ar:");
+        System.out.println ("Obs: O verbo está na terceira pessao do singular (ele/ela)");
+        System.out.println ("Obs: Para sair, digite [sair]");
+        texto= input.nextLine();
+        int tam= texto.length();
+        System.out.println("Digite a tempo verbal desejado: \n \n \n");
+        System.out.println(" [1] Presente \n [2] Passado \n [3] Futuro");
+        int op= input.nextInt();
+    
+        switch (op){
+        case (1):
+            System.out.println ("Verbo conjugado: \n");
+            for (int i=0; i<tam-1; i++){
+            char letra = texto.charAt(i);
+            System.out.print (letra);
+        }
+            break;
+        case (2):
+            System.out.println ("Verbo conjugado: \n");
+            for (int i=0; i<tam-2; i++){
+            char letra = texto.charAt(i);
+            System.out.print (letra);
+        }
+        System.out.print ("ou");
+            break;
+        case (3):
+            System.out.println ("Verbo conjugado: \n");
+            for (int i=0; i<tam; i++){
+            char letra = texto.charAt(i);
+            System.out.print (letra);
+        }
+        System.out.print ("á");
+            break;
+      }
+      input.nextLine();
+    }while (!texto.equals("sair"));
+  }
+}
